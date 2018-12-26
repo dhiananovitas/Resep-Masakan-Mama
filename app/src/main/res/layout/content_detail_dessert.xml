@@ -20,6 +20,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
+            android:text="Judul"
+            android:textColor="?attr/colorAccent" />
+
+        <TextView
+            android:id="@+id/jdl_cake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Judul" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:text="Deskripsi"
             android:textColor="?attr/colorAccent" />
 

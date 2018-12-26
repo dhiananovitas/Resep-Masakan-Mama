@@ -40,14 +40,14 @@ public class MainActivityDessert extends AppCompatActivity implements DessertAda
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_dessert);
+        setContentView(R.layout.fragment_dessert);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerViewCake);
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.dessert_recview);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        recyclerView.setLayoutManager(layoutManager);
-        madapter = new DessertAdapter(this, mlist);
+//        recyclerView.setLayoutManager(layoutManager);
+//        madapter = new DessertAdapter(this, mlist);
         recyclerView.setAdapter(madapter);
 
         fillData();

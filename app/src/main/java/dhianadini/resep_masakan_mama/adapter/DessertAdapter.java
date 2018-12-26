@@ -11,7 +11,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
+import dhianadini.resep_masakan_mama.Dessert;
 import dhianadini.resep_masakan_mama.model.dessert;
 import dhianadini.resep_masakan_mama.R;
 
@@ -20,13 +22,15 @@ import dhianadini.resep_masakan_mama.R;
  */
 
 public class DessertAdapter extends RecyclerView.Adapter<DessertAdapter.ViewHolder> {
-    ArrayList<dessert> dessertlist;
+   List<Dessert> dessertlist;
     ICakeAdapter mICakeAdapter;
 
-    public DessertAdapter(Context context, ArrayList<dessert> dessertlist) {
+    public DessertAdapter(Context context, List<Dessert> dessertlist) {
         this.dessertlist = dessertlist;
         mICakeAdapter = (ICakeAdapter) context;
     }
+
+
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -39,10 +43,10 @@ public class DessertAdapter extends RecyclerView.Adapter<DessertAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        dessert dessert = dessertlist.get(position);
+        Dessert dessert = dessertlist.get(position);
         holder.tvJudul.setText(dessert.judul);
         holder.tvDeskripsi.setText(dessert.deskripsi);
-        holder.ivfoto.setImageURI(Uri.parse(dessert.foto));
+        holder.ivfoto.setImageResource(dessert.foto);
     }
 
     @Override
