@@ -8,11 +8,16 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
@@ -31,6 +36,7 @@ public class FragmentDessert extends Fragment{
   View v;
   private RecyclerView recyclerView;
   private List<Dessert> lstDessert;
+  String mQuery;
 
   public FragmentDessert(){
 
@@ -46,6 +52,13 @@ public class FragmentDessert extends Fragment{
     return v;
 
   }
+
+  @Override
+  public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+    inflater.inflate(R.menu.menu_main,menu);
+    super.onCreateOptionsMenu(menu, inflater);
+  }
+
 
   @Override
   public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -79,5 +92,7 @@ public class FragmentDessert extends Fragment{
             "Penjual angsle tradisional dulu berkeliling kampung hanya pada malam hari, " +
             "karena angsle yang hangat pas disajikan saat malam hari atau saat hujan.",
             "","",R.drawable.angsle));
+
+    setHasOptionsMenu(true);
   }
 }

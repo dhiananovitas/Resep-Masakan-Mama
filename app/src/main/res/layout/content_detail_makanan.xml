@@ -16,25 +16,15 @@
         android:paddingRight="16dp"
         android:paddingTop="16dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="Judul"
-            android:textColor="?attr/colorAccent" />
 
         <TextView
             android:id="@+id/jdl_food"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="Judul" />
+            tools:text="Judul"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/activity_horizontal_margin"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="Deskripsi"
-            android:textColor="?attr/colorAccent" />
 
         <TextView
             android:id="@+id/desc_food"
