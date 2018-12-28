@@ -19,15 +19,15 @@
         <activity android:name=".MainActivity" />
         <!--<activity android:name=".MainActivityMakanan" />-->
         <!--<activity android:name=".MainActivityMinuman" />-->
-        <activity android:name=".MainActivityDessert" />
-        <!--<activity-->
-            <!--android:name=".DetailActivityMakanan"-->
-            <!--android:label="@string/title_activity_detail"-->
-            <!--android:theme="@style/AppTheme.NoActionBar" />-->
-        <!--<activity-->
-            <!--android:name=".DetailActivityMinuman"-->
-            <!--android:label="@string/title_activity_detail"-->
-            <!--android:theme="@style/AppTheme.NoActionBar" />-->
+        <!--<activity android:name=".MainActivityDessert" />-->
+        <activity
+            android:name=".DetailActivityMakanan"
+            android:label="@string/title_activity_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DetailActivityMinuman"
+            android:label="@string/title_activity_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".DetailActivityDessert"
             android:label="@string/title_activity_detail"

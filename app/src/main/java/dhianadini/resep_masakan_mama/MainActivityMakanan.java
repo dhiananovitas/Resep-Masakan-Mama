@@ -81,32 +81,32 @@ public class MainActivityMakanan extends AppCompatActivity implements MakananAda
         startActivity(intent);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-
-        MenuItem searchItem = menu.findItem(R.id.action_search);
-        SearchView serView = (SearchView)
-                MenuItemCompat.getActionView(searchItem);
-
-        serView.setOnQueryTextListener(
-                new SearchView.OnQueryTextListener() {
-                    @Override
-                    public boolean onQueryTextSubmit(String query) {
-                        return false;
-                    }
-
-                    @Override
-                    public boolean onQueryTextChange(String newText) {
-                        mQuery = newText.toLowerCase();
-                        doFilter(mQuery);
-                        return true;
-                    }
-                }
-        );
-        return true;
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.menu_main, menu);
+//
+//        MenuItem searchItem = menu.findItem(R.id.action_search);
+//        SearchView serView = (SearchView)
+//                MenuItemCompat.getActionView(searchItem);
+//
+//        serView.setOnQueryTextListener(
+//                new SearchView.OnQueryTextListener() {
+//                    @Override
+//                    public boolean onQueryTextSubmit(String query) {
+//                        return false;
+//                    }
+//
+//                    @Override
+//                    public boolean onQueryTextChange(String newText) {
+//                        mQuery = newText.toLowerCase();
+//                        doFilter(mQuery);
+//                        return true;
+//                    }
+//                }
+//        );
+//        return true;
+//    }
 
     private void doFilter(String query) {
         if (!isFiltered) {

@@ -11,37 +11,46 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TabLayout tabLayout;
-    private ViewPager viewPager;
-    private ViewPagerAdapter adapter;
+  private TabLayout tabLayout;
+  private ViewPager viewPager;
+  private ViewPagerAdapter adapter;
+  private Button btn;
 
-    @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+  @Override
+  protected void onCreate(@Nullable Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+    setSupportActionBar(toolbar);
 
-        tabLayout = (TabLayout) findViewById(R.id.tablayout_id);
-        viewPager = (ViewPager) findViewById(R.id.viewpager_id);
-        adapter = new ViewPagerAdapter(getSupportFragmentManager());
+//    btn = (Button) findViewById(R.id.action_feedback);
+    tabLayout = (TabLayout) findViewById(R.id.tablayout_id);
+    viewPager = (ViewPager) findViewById(R.id.viewpager_id);
+    adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
-        adapter.AddFragment(new FragmentDessert(),"Dessert");
-        adapter.AddFragment(new FragmentDrink(),"Beverages");
-        adapter.AddFragment(new FragmentFood(),"Food");
+    adapter.AddFragment(new FragmentDessert(),"Dessert");
+    adapter.AddFragment(new FragmentDrink(),"Beverages");
+    adapter.AddFragment(new FragmentFood(),"Food");
 
-//        tabLayout.getTabAt(0).setIcon(R.drawable.ic_cake);
-//        tabLayout.getTabAt(1).setIcon(R.drawable.ic_drink);
-//        tabLayout.getTabAt(2).setIcon(R.drawable.ic_restaurant_black_24dp);
+    viewPager.setAdapter(adapter);
+    tabLayout.setupWithViewPager(viewPager);
 
-        viewPager.setAdapter(adapter);
-        tabLayout.setupWithViewPager(viewPager);
-    }
+//      btn.setOnClickListener(new Button.OnClickListener(){
+//          @Override
+//          public void onClick(View v) {
+//              Intent myIntent = new Intent(getApplication(), Feedback.class);
+//              startActivity(myIntent);
+//          }
+//      });
+  }
 
-    //    ImageButton food, drink, cake;
+  //    ImageButton food, drink, cake;
 //
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
@@ -88,4 +97,5 @@ public class MainActivity extends AppCompatActivity {
 //        };
 //        cake.setOnClickListener(listenercake);
 //    }
+
 }
