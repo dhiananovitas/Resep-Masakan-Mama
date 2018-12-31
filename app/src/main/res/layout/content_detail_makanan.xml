@@ -17,6 +17,14 @@
         android:paddingTop="16dp">
 
         <TextView
+            android:id="@+id/jdl_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textColor="?attr/colorAccent"
+            tools:text="Judul" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"

@@ -1,102 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <android.support.design.widget.TabLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:background="@color/colorPrimaryDark"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorAccent"
+        android:id="@+id/tablayout_id">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.TabLayout>
 
-    </android.support.design.widget.AppBarLayout>
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <android.support.v4.view.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="@dimen/activity_vertical_margin"
-        tools:context="dhianadini.resep_masakan_mama.MainActivity">
-
-        <ImageButton
-            android:id="@+id/ImageButtonFood"
-            android:layout_width="wrap_content"
-            android:layout_height="140dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@id/ImageButtonFood"
-            android:layout_marginTop="75dp"
-            android:alpha="0.6"
-            android:src="@drawable/ayampenyet" />
-
-        <ImageButton
-            android:id="@+id/ImageButtonDrink"
-            android:layout_width="wrap_content"
-            android:layout_height="140dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@id/ImageButtonDrink"
-            android:layout_marginTop="8dp"
-            android:alpha="0.6"
-            android:src="@drawable/tehtarik" />
-
-        <ImageButton
-            android:id="@+id/ImageButtonCake"
-            android:onClick="FragmentDessertClick"
-            android:layout_width="wrap_content"
-            android:layout_height="140dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@id/ImageButtonCake"
-            android:layout_marginTop="8dp"
-            android:alpha="0.6"
-            android:src="@drawable/donat"
-            tools:ignore="OnClick" />
-
-        <TextView
-            android:id="@+id/textViewFood"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_alignBottom="@+id/ImageButtonFood"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="45dp"
-            android:text="FOOD"
-            android:textSize="40dp" />
-
-        <TextView
-            android:id="@+id/textViewDrink"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_alignBottom="@+id/ImageButtonDrink"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="45dp"
-            android:text="DRINK"
-            android:textSize="40dp" />
-
-        <TextView
-            android:id="@+id/textViewCake"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_alignBottom="@+id/ImageButtonCake"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="45dp"
-            android:text="CAKE"
-            android:textSize="40dp" />
+        android:id="@+id/viewpager_id"></android.support.v4.view.ViewPager>
 
 
 
-
-    </RelativeLayout>
-</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

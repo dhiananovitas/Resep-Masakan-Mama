@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "255477566959",
+    "firebase_url": "https://resep-8d1c5.firebaseio.com",
+    "project_id": "resep-8d1c5",
+    "storage_bucket": "resep-8d1c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255477566959:android:f7e07c45d7595582",
+        "android_client_info": {
+          "package_name": "dhianadini.resep_masakan_mama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255477566959-ufr88tlc1uo4b5a2t3qj7r1rij30kkue.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dhianadini.resep_masakan_mama",
+            "certificate_hash": "56daebc1060550ed4d6e66a778fbda48a1a9c5dd"
+          }
+        },
+        {
+          "client_id": "255477566959-insf8275n0hs0jj4lviivdh6mjj3d89f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0IHWCd-8WXb2tIK0Ll3nBJZEvWzV-bFg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255477566959-insf8275n0hs0jj4lviivdh6mjj3d89f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

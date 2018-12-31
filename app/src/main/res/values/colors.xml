@@ -3,7 +3,8 @@
     <color name="colorPrimary">#22c6bd</color>
     <color name="colorPrimaryDark">#0f8680</color>
     <color name="colorAccent">#e67e22</color>
-    <color name="backgroundfragment">#22c5bc</color>
+    <color name="colorAccentLight">#f1b27a</color>
+    <color name="backgroundfragment">#ffffff</color>
 
     <!-- Screens background color-->
     <color name="bg_screen1">#f64c73</color>
