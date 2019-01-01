@@ -46,19 +46,19 @@ public class DetailActivityDessert extends AppCompatActivity {
 //            }
 //        });
 
-        ImageButton feed = (ImageButton) findViewById(R.id.feed);
-        feed.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                myDialog.show();
-                Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.setComponent(new ComponentName("dhianadini.feedbackresep","dhianadini.feedbackresep.FeedbackDessert"));
-                startActivity(intent);
-//                Intent launchactivity = new  Intent(DetailActivityDessert.this, Feedback.class);
-//                startActivity(launchactivity);
-//                Toast.makeText(getBaseContext(), "FAB Clicked", Toast.LENGTH_SHORT).show();
-            }
-        });
+//        ImageButton feed = (ImageButton) findViewById(R.id.feed);
+//        feed.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                myDialog.show();
+//                Intent intent = new Intent(Intent.ACTION_MAIN);
+//                intent.setComponent(new ComponentName("dhianadini.feedbackresep","dhianadini.feedbackresep.FeedbackDessert"));
+//                startActivity(intent);
+////                Intent launchactivity = new  Intent(DetailActivityDessert.this, Feedback.class);
+////                startActivity(launchactivity);
+////                Toast.makeText(getBaseContext(), "FAB Clicked", Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
 
 ////        dessert dessert = (dessert) getIntent().getSerializableExtra(MainActivityDessert.CAKE);

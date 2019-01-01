@@ -30,58 +30,7 @@ public class DetailActivityMinuman extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent launchactivity=new Intent (getApplicationContext(),Feedback.class);
-//                startActivity(launchactivity);
-//
-//            }
-//        });
 
-        ImageButton feed = (ImageButton) findViewById(R.id.feed);
-        feed.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                myDialog.show();
-                Intent intent = new Intent(Intent.ACTION_MAIN);
-                intent.setComponent(new ComponentName("dhianadini.feedbackresep","dhianadini.feedbackresep.FeedbackDrink"));
-                startActivity(intent);
-//                Intent launchactivity = new  Intent(DetailActivityDessert.this, Feedback.class);
-//                startActivity(launchactivity);
-//                Toast.makeText(getBaseContext(), "FAB Clicked", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-//        FloatingActionButton fab = findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                // Your FAB click action here...
-//                Intent launchactivity = new  Intent(DetailActivityMinuman.this, Feedback.class);
-//                startActivity(launchactivity);
-//                Toast.makeText(getBaseContext(), "FAB Clicked", Toast.LENGTH_SHORT).show();
-//            }
-//        });
-
-//        minuman minuman = (minuman) getIntent().getSerializableExtra(MainActivityMinuman.DRINK);
-//        setTitle(minuman.judul);
-//        ImageView ivFoto = (ImageView) findViewById(R.id.imageFoto);
-//        ivFoto.setImageURI(Uri.parse(minuman.foto));
-//        TextView tvDeskripsi = (TextView) findViewById(R.id.desc_drink);
-//        tvDeskripsi.setText(minuman.deskripsi);
-//        TextView tvBahan = (TextView) findViewById(R.id.bahan_drink);
-//        tvBahan.setText(minuman.bahan);
-//        TextView tvCara = (TextView) findViewById(R.id.cara_drink);
-//        tvCara.setText(minuman.cara);
-//
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                onBackPressed();
-//            }
-//        });
 
     }
 }

@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Resep-Masakan-Mama.iml" filepath="$PROJECT_DIR$/Resep-Masakan-Mama.iml" />
+      <module fileurl="file://E:\Kuliah\SEMESTER 7\Pemrog. Mobile\icon\codes\ver 3\Resep\Resep-Masakan-Mama\Resep-Masakan-Mama.iml" filepath="E:\Kuliah\SEMESTER 7\Pemrog. Mobile\icon\codes\ver 3\Resep\Resep-Masakan-Mama\Resep-Masakan-Mama.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://E:\Kuliah\SEMESTER 7\Pemrog. Mobile\icon\codes\ver 3\Resep\Resep-Masakan-Mama\app\app.iml" filepath="E:\Kuliah\SEMESTER 7\Pemrog. Mobile\icon\codes\ver 3\Resep\Resep-Masakan-Mama\app\app.iml" />
     </modules>
   </component>
 </project>
