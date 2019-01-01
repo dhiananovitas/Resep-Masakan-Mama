@@ -66,10 +66,7 @@ public class MainActivity extends AppCompatActivity{
 
           //noinspection SimplifiableIfStatement
           if (id == R.id.action_feedback) {
-
-              Intent intent = new Intent(Intent.ACTION_MAIN);
-              intent.setComponent(new ComponentName("dhianadini.feedbackresep","dhianadini.feedbackresep.Feedback"));
-              startActivity(intent);
+            doClick();
 
             Toast.makeText(MainActivity.this, "Action clicked", Toast.LENGTH_LONG).show();
             return true;
@@ -78,6 +75,12 @@ public class MainActivity extends AppCompatActivity{
           return super.onOptionsItemSelected(item);
         }
 
+        public void doClick(){
+          Intent intent = new Intent(Intent.ACTION_MAIN);
+          intent.setComponent(new ComponentName("dhianadini.feedbackresep","dhianadini.feedbackresep.Feedback"));
+          startActivity(intent);
+
+        }
 
 
 }
