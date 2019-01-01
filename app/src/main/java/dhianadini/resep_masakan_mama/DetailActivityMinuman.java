@@ -1,5 +1,7 @@
 package dhianadini.resep_masakan_mama;
 
+import android.app.Dialog;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -8,6 +10,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,7 +21,7 @@ import android.widget.Toast;
  */
 
 public class DetailActivityMinuman extends AppCompatActivity {
-
+    public Dialog myDialog;
     FloatingActionButton fab;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +38,20 @@ public class DetailActivityMinuman extends AppCompatActivity {
 //
 //            }
 //        });
+
+        ImageButton feed = (ImageButton) findViewById(R.id.feed);
+        feed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                myDialog.show();
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.setComponent(new ComponentName("dhianadini.feedbackresep","dhianadini.feedbackresep.FeedbackDrink"));
+                startActivity(intent);
+//                Intent launchactivity = new  Intent(DetailActivityDessert.this, Feedback.class);
+//                startActivity(launchactivity);
+//                Toast.makeText(getBaseContext(), "FAB Clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 //        FloatingActionButton fab = findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {

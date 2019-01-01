@@ -1,6 +1,7 @@
 package dhianadini.resep_masakan_mama;
 
 import android.app.Dialog;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -30,6 +31,8 @@ public class DetailActivityDessert extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
+
+
 //        FloatingActionButton fab = findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -48,6 +51,9 @@ public class DetailActivityDessert extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 myDialog.show();
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.setComponent(new ComponentName("dhianadini.feedbackresep","dhianadini.feedbackresep.FeedbackDessert"));
+                startActivity(intent);
 //                Intent launchactivity = new  Intent(DetailActivityDessert.this, Feedback.class);
 //                startActivity(launchactivity);
 //                Toast.makeText(getBaseContext(), "FAB Clicked", Toast.LENGTH_SHORT).show();

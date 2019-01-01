@@ -16,6 +16,13 @@
         android:paddingRight="16dp"
         android:paddingTop="16dp">
 
+        <ImageButton
+            android:id="@+id/feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:src="@drawable/fdbck" />
+
         <TextView
             android:id="@+id/jdl_drink"
             android:layout_width="wrap_content"

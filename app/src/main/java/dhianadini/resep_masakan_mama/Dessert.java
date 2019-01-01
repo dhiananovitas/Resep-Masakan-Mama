@@ -2,11 +2,13 @@ package dhianadini.resep_masakan_mama;
 
 import android.content.Context;
 
+import java.io.Serializable;
+
 /**
  * Created by LENOVO on 26/12/2018.
  */
 
-public class Dessert {
+public class Dessert{
     public String judul;
     public String deskripsi;
     public String bahan;

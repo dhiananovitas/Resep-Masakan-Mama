@@ -35,7 +35,7 @@ public class DessertAdapter extends RecyclerView.Adapter<DessertAdapter.MyViewHo
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        v = LayoutInflater.from(mContext).inflate(R.layout.item_dessert,parent,false);
+        v = LayoutInflater.from(mContext).inflate(R.layout.item_dessert, parent, false);
         final MyViewHolder vHolder = new MyViewHolder(v);
 //        final Intent[] intent = {new Intent(v.getContext(), DetailActivityDessert.class)};
 
@@ -69,6 +69,9 @@ public class DessertAdapter extends RecyclerView.Adapter<DessertAdapter.MyViewHo
         });
         return vHolder;
     }
+
+
+
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {

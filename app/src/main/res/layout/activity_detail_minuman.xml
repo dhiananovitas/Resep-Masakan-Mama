@@ -41,7 +41,9 @@
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_detail_minuman" />
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_detail_minuman" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
